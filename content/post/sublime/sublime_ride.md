@@ -1,17 +1,35 @@
-+++
-date = 2018-09-26
-title = "Scientific writing made easy 101: Sublime and R-IDE"
+---
+title: Scientific writing made easy 101: Sublime and R-IDE
 
+# Summary for listings and search engines
+summary: Set up a beautifully simple multi purpose working suite in under 10 minutes.
+
+# Link this post with a project
+projects: []
+
+# Date published
+date: "2018-09-26"
+
+# Date updated
+lastmod: "2020-12-13T00:00:00Z"
+
+# Is this an unpublished draft?
+draft: false
+
+# Show this page in the Featured widget?
+featured: false
+
+# Featured image
+# Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
-  caption: ''
+  caption: ""
   focal_point: ""
   placement: 2
   preview_only: false
-  
-tags = []
-summary = "Set up a beautifully simple multi purpose working suite in under 10 minutes."
-+++
 
+authors:
+- admin
+---
 
 UPDATE 22/02/2021: *CAUTION:* This guide is a bit out-dated. For instance, R-IDE changed name into [sublime-ide-r](https://github.com/REditorSupport/sublime-ide-r). Overall, the guide remains valid. However, if you follow it, be aware that you will have to adapt some of the steps. 
 
