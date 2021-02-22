@@ -1,14 +1,15 @@
 ---
-title: Scientific writing made easy 101: Sublime and R-IDE
+title: Welcome to Wowchemy, the website builder for Hugo
+subtitle: Welcome 👋 We know that first impressions are important, so we've populated your new site with some initial content to help you get familiar with everything in no time.
 
 # Summary for listings and search engines
-summary: Set up a beautifully simple multi purpose working suite in under 10 minutes.
+summary: Welcome 👋 We know that first impressions are important, so we've populated your new site with some initial content to help you get familiar with everything in no time.
 
 # Link this post with a project
 projects: []
 
 # Date published
-date: "2018-09-26"
+date: "2020-12-13T00:00:00Z"
 
 # Date updated
 lastmod: "2020-12-13T00:00:00Z"
@@ -22,13 +23,22 @@ featured: false
 # Featured image
 # Place an image named `featured.jpg/png` in this page's folder and customize its options here.
 image:
-  caption: "A"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
   focal_point: ""
   placement: 2
   preview_only: false
 
 authors:
 - admin
+- 吳恩達
+
+tags:
+- Academic
+- 开源
+
+categories:
+- Demo
+- 教程
 ---
 
 UPDATE 22/02/2021: *CAUTION:* This guide is a bit out-dated. For instance, R-IDE changed name into [sublime-ide-r](https://github.com/REditorSupport/sublime-ide-r). Overall, the guide remains valid. However, if you follow it, be aware that you will have to adapt some of the steps. 
