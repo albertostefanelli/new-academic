@@ -6,7 +6,7 @@ title: Alberto Stefanelli
 superuser: true
 
 # Role/position/tagline
-role: PhD Candidate, Data Scientist, Consultant
+role: Ph.D. Candidate, Data Scientist, Consultant
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -70,7 +70,9 @@ highlight_name: false
 ---
 
 
-I am a FWO PhD Fellow at the [Institute for Social and Political Opinion Research (ISPO)](https://soc.kuleuven.be/ceso/ispo), KU Leuven, Belgium. My research interests are mostly within the field of public opinion, voting behaviour, and attitudes towards democracy. My PhD is on radical belief systems, conditionality of liberal values, and polarisation. I am currently working on the questionnaire design and data collection for the Belgian National Electoral Study (BNES) and the Belgian Ethnic Minorities Election Study (BEMES).
+I am a FWO PhD Fellow at the [Institute for Social and Political Opinion Research (ISPO)](https://soc.kuleuven.be/ceso/ispo), KU Leuven, Belgium. My research interests are mostly within the field of public opinion, statistics, voting behaviour, and attitudes towards democracy. 
+
+More precisely, my PhD is on radical belief systems, conditionality of liberal values, and polarisation. I am currently working on the questionnaire design, data collection, and exploratory data analysis for the Belgian National Electoral Study (BNES) and the Belgian Ethnic Minorities Election Study (BEMES).
 
 Methods wise, I am particularly interested in conjoint analysis, matching and standardization techniques, graphical causal models, machine learning, and big data. 
 
@@ -80,4 +82,4 @@ Concerning the private sector, I am an external consultant and analyst for [ZK A
 
 I have too many hobbies but what never gets me tried is cooking, woodworking, and reading about how individuals make choices. Huge Linux fan boy. 
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/stefanelli_CV_academic.pdf" "newtab" >}}resumé{{< /staticref >}}.
