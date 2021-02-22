@@ -18,7 +18,7 @@ output:
   #   fig_width: 12
   #   fig_height: 8
 # header-includes
-rmd_hash: d27a7c5102a1daef
+rmd_hash: 141a40b95b494494
 
 ---
 
@@ -131,12 +131,12 @@ Similarly, we need to recode the rest of the variables that we are going to use 
 
 <pre class='chroma'><code class='language-r' data-lang='r'><span class='c'># recode age to match the LSF data</span>
 <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age18</span> <span class='o'>&lt;-</span> <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;=</span><span class='m'>18</span> <span class='o'>&amp;</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&lt;=</span><span class='m'>27</span>, <span class='s'>"18-27"</span>, 
-                            <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>27</span> <span class='o'>&amp;</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&lt;=</span><span class='m'>37</span>, <span class='s'>"28-37"</span>,
-                              <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>37</span> <span class='o'>&amp;</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&lt;=</span><span class='m'>47</span>, <span class='s'>"38-47"</span>,
-                                <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>47</span> <span class='o'>&amp;</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&lt;=</span><span class='m'>57</span>, <span class='s'>"48-57"</span>,
-                                   <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>57</span> <span class='o'>&amp;</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&lt;=</span><span class='m'>67</span>, <span class='s'>"58-67"</span>,
-                                     <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>67</span> <span class='o'>&amp;</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&lt;=</span><span class='m'>77</span>, <span class='s'>"68-77"</span>,
-                                        <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>77</span>, <span class='s'>"78"</span>,<span class='kc'>NA</span>
+                        <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>27</span> <span class='o'>&amp;</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&lt;=</span><span class='m'>37</span>, <span class='s'>"28-37"</span>,
+                          <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>37</span> <span class='o'>&amp;</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&lt;=</span><span class='m'>47</span>, <span class='s'>"38-47"</span>,
+                            <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>47</span> <span class='o'>&amp;</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&lt;=</span><span class='m'>57</span>, <span class='s'>"48-57"</span>,
+                              <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>57</span> <span class='o'>&amp;</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&lt;=</span><span class='m'>67</span>, <span class='s'>"58-67"</span>,
+                                <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>67</span> <span class='o'>&amp;</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&lt;=</span><span class='m'>77</span>, <span class='s'>"68-77"</span>,
+                                  <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>age</span> <span class='o'>&gt;</span> <span class='m'>77</span>, <span class='s'>"78"</span>,<span class='kc'>NA</span>
                           <span class='o'>)</span><span class='o'>)</span><span class='o'>)</span><span class='o'>)</span><span class='o'>)</span><span class='o'>)</span><span class='o'>)</span>
 
 <span class='c'># recode region to match the LSF data</span>
@@ -187,21 +187,17 @@ The next step consists of calculating the population margins and the correspondi
   <span class='nf'>mutate</span><span class='o'>(</span>marignals_share <span class='o'>=</span> <span class='nv'>count</span> <span class='o'>/</span> <span class='nf'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='o'>(</span><span class='nv'>count</span><span class='o'>)</span><span class='o'>)</span> <span class='o'>%&gt;%</span> 
   <span class='nf'>mutate</span><span class='o'>(</span>Freq<span class='o'>=</span><span class='nv'>marignals_share</span> <span class='o'>*</span> <span class='nf'><a href='https://rdrr.io/r/base/nrow.html'>nrow</a></span><span class='o'>(</span><span class='nv'>data_wo_na_f</span><span class='o'>)</span><span class='o'>)</span>
 
-<span class='nv'>marignals_share</span>
-[90m# A tibble: 126 x 7[39m
-   sex1  REG1  age18 educat3c  count marignals_share  Freq
-   [3m[90m<chr>[39m[23m [3m[90m<chr>[39m[23m [3m[90m<chr>[39m[23m    [3m[90m<dbl>[39m[23m  [3m[90m<dbl>[39m[23m           [3m[90m<dbl>[39m[23m [3m[90m<dbl>[39m[23m
-[90m 1[39m MEN   BXL   18-27        1 [4m2[24m[4m4[24m657.         0.002[4m7[24m[4m4[24m  4.45
-[90m 2[39m MEN   BXL   18-27        2 [4m3[24m[4m6[24m214.         0.004[4m0[24m[4m2[24m  6.53
-[90m 3[39m MEN   BXL   18-27        3 [4m1[24m[4m6[24m972.         0.001[4m8[24m[4m8[24m  3.06
-[90m 4[39m MEN   BXL   28-37        1 [4m2[24m[4m1[24m672.         0.002[4m4[24m[4m1[24m  3.91
-[90m 5[39m MEN   BXL   28-37        2 [4m2[24m[4m2[24m445.         0.002[4m4[24m[4m9[24m  4.05
-[90m 6[39m MEN   BXL   28-37        3 [4m5[24m[4m5[24m279.         0.006[4m1[24m[4m4[24m  9.97
-[90m 7[39m MEN   BXL   38-47        1 [4m2[24m[4m7[24m900.         0.003[4m1[24m[4m0[24m  5.03
-[90m 8[39m MEN   BXL   38-47        2 [4m2[24m[4m5[24m811.         0.002[4m8[24m[4m6[24m  4.65
-[90m 9[39m MEN   BXL   38-47        3 [4m3[24m[4m8[24m774.         0.004[4m3[24m[4m0[24m  6.99
-[90m10[39m MEN   BXL   48-57        1 [4m2[24m[4m5[24m159.         0.002[4m7[24m[4m9[24m  4.54
-[90m# … with 116 more rows[39m</code></pre>
+<span class='nf'>kable</span><span class='o'>(</span><span class='nf'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='o'>(</span><span class='nv'>marignals_share</span><span class='o'>)</span><span class='o'>)</span>
+</code></pre>
+
+| sex1 | REG1 | age18 | educat3c |    count | marignals_share |     Freq |
+|:-----|:-----|:------|---------:|---------:|----------------:|---------:|
+| MEN  | BXL  | 18-27 |        1 | 24656.65 |       0.0027365 | 4.446835 |
+| MEN  | BXL  | 18-27 |        2 | 36213.56 |       0.0040192 | 6.531126 |
+| MEN  | BXL  | 18-27 |        3 | 16971.64 |       0.0018836 | 3.060841 |
+| MEN  | BXL  | 28-37 |        1 | 21671.59 |       0.0024052 | 3.908479 |
+| MEN  | BXL  | 28-37 |        2 | 22445.38 |       0.0024911 | 4.048031 |
+| MEN  | BXL  | 28-37 |        3 | 55279.43 |       0.0061352 | 9.969663 |
 
 </div>
 
@@ -309,13 +305,16 @@ Finally, we merge the weights with the untouched dataset. We use the respondent 
 <span class='nv'>list_na</span><span class='o'>[[</span><span class='nf'><a href='https://rdrr.io/r/base/character.html'>as.character</a></span><span class='o'>(</span><span class='nv'>i</span><span class='o'>)</span><span class='o'>]</span><span class='o'>]</span> <span class='o'>&lt;-</span> <span class='nf'><a href='https://rdrr.io/r/base/unlist.html'>unlist</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>[</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>addressID</span><span class='o'>==</span><span class='nv'>i</span>, <span class='o'>]</span><span class='o'>)</span>
 <span class='o'>&#125;</span>
 
-<span class='nf'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='o'>(</span><span class='nf'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='o'>(</span><span class='nf'>purrr</span><span class='nf'>::</span><span class='nf'><a href='https://purrr.tidyverse.org/reference/reduce.html'>reduce</a></span><span class='o'>(</span><span class='nv'>list_na</span>, <span class='nv'>rbind</span><span class='o'>)</span><span class='o'>)</span>, <span class='m'>5</span><span class='o'>)</span>
-       age PROVINCE region q13 q2 addressID q24 educat3c age18 REG1 sex1
-out   <NA>        7      2   4  2     43905  12        1  <NA>  WAL  WOM
-elt   <NA>        2      2   4  2     43409  52        1  <NA>  BXL  WOM
-elt.1 <NA>        2      2   3  1     43119  12        1  <NA>  BXL  MEN
-elt.2 <NA>        2      2   3  2     41111  13        1  <NA>  BXL  WOM
-elt.3 <NA>        2      2   4  2     41103  77        1  <NA>  BXL  WOM</code></pre>
+<span class='nf'>kable</span><span class='o'>(</span><span class='nf'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='o'>(</span><span class='nf'><a href='https://rdrr.io/r/base/data.frame.html'>data.frame</a></span><span class='o'>(</span><span class='nf'>purrr</span><span class='nf'>::</span><span class='nf'><a href='https://purrr.tidyverse.org/reference/reduce.html'>reduce</a></span><span class='o'>(</span><span class='nv'>list_na</span>, <span class='nv'>rbind</span><span class='o'>)</span><span class='o'>)</span>, <span class='m'>5</span><span class='o'>)</span><span class='o'>)</span>
+</code></pre>
+
+|       | age | PROVINCE | region | q13 | q2  | addressID | q24 | educat3c | age18 | REG1 | sex1 |
+|:------|:----|:---------|:-------|:----|:----|:----------|:----|:---------|:------|:-----|:-----|
+| out   | NA  | 7        | 2      | 4   | 2   | 43905     | 12  | 1        | NA    | WAL  | WOM  |
+| elt   | NA  | 2        | 2      | 4   | 2   | 43409     | 52  | 1        | NA    | BXL  | WOM  |
+| elt.1 | NA  | 2        | 2      | 3   | 1   | 43119     | 12  | 1        | NA    | BXL  | MEN  |
+| elt.2 | NA  | 2        | 2      | 3   | 2   | 41111     | 13  | 1        | NA    | BXL  | WOM  |
+| elt.3 | NA  | 2        | 2      | 4   | 2   | 41103     | 77  | 1        | NA    | BXL  | WOM  |
 
 </div>
 
@@ -402,26 +401,17 @@ The next step consists of calculating the population margins and the correspondi
 
 <span class='nf'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='o'>(</span><span class='nv'>freq_voting</span><span class='o'>)</span><span class='o'>[</span><span class='m'>1</span><span class='o'>]</span> <span class='o'>&lt;-</span> <span class='s'>"vote"</span> 
 
-<span class='nv'>freq_voting</span>
-[90m# A tibble: 16 x 2[39m
-   vote   Freq
-   [3m[90m<fct>[39m[23m [3m[90m<dbl>[39m[23m
-[90m 1[39m 1     114. 
-[90m 2[39m 2     205. 
-[90m 3[39m 3     109. 
-[90m 4[39m 4      85.9
-[90m 5[39m 5     153. 
-[90m 6[39m 6      78.1
-[90m 7[39m 7     110. 
-[90m 8[39m 12    121. 
-[90m 9[39m 13     96.8
-[90m10[39m 14     47.3
-[90m11[39m 15     78.6
-[90m12[39m 17     28.4
-[90m13[39m 18     14.2
-[90m14[39m 50     82.7
-[90m15[39m 52    179. 
-[90m16[39m 97     37.9</code></pre>
+<span class='nf'>kable</span><span class='o'>(</span><span class='nf'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='o'>(</span><span class='nv'>freq_voting</span><span class='o'>)</span><span class='o'>)</span>
+</code></pre>
+
+| vote |      Freq |
+|:-----|----------:|
+| 1    | 113.67733 |
+| 2    | 205.04388 |
+| 3    | 109.30283 |
+| 4    |  85.85117 |
+| 5    | 152.85593 |
+| 6    |  78.07835 |
 
 </div>
 
@@ -459,21 +449,17 @@ Next, we need to calculate the frequencies of sex age education taking into acco
 <span class='nv'>freq_ager</span> <span class='o'>&lt;-</span> <span class='nv'>marignals_share</span> <span class='o'>%&gt;%</span> 
              <span class='nf'>select</span><span class='o'>(</span><span class='o'>-</span><span class='nv'>marignals_share</span>, <span class='o'>-</span><span class='nv'>count</span><span class='o'>)</span> 
 
-<span class='nv'>freq_ager</span>
-[90m# A tibble: 119 x 5[39m
-   sex1  REG1  age18 educat3c  Freq
-   [3m[90m<chr>[39m[23m [3m[90m<chr>[39m[23m [3m[90m<chr>[39m[23m    [3m[90m<dbl>[39m[23m [3m[90m<dbl>[39m[23m
-[90m 1[39m MEN   BXL   18-27        1  4.26
-[90m 2[39m MEN   BXL   18-27        2  6.26
-[90m 3[39m MEN   BXL   18-27        3  2.93
-[90m 4[39m MEN   BXL   28-37        1  3.75
-[90m 5[39m MEN   BXL   28-37        2  3.88
-[90m 6[39m MEN   BXL   28-37        3  9.56
-[90m 7[39m MEN   BXL   38-47        1  4.82
-[90m 8[39m MEN   BXL   38-47        2  4.46
-[90m 9[39m MEN   BXL   38-47        3  6.70
-[90m10[39m MEN   BXL   48-57        1  4.35
-[90m# … with 109 more rows[39m</code></pre>
+<span class='nf'>kable</span><span class='o'>(</span><span class='nf'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='o'>(</span><span class='nv'>freq_ager</span><span class='o'>)</span><span class='o'>)</span>
+</code></pre>
+
+| sex1 | REG1 | age18 | educat3c |     Freq |
+|:-----|:-----|:------|---------:|---------:|
+| MEN  | BXL  | 18-27 |        1 | 4.262968 |
+| MEN  | BXL  | 18-27 |        2 | 6.261078 |
+| MEN  | BXL  | 18-27 |        3 | 2.934282 |
+| MEN  | BXL  | 28-37 |        1 | 3.746872 |
+| MEN  | BXL  | 28-37 |        2 | 3.880654 |
+| MEN  | BXL  | 28-37 |        3 | 9.557439 |
 
 </div>
 
@@ -543,25 +529,29 @@ Let's merge the weights with the BNES dataset and check that we achieved the des
                  <span class='nf'>mutate</span><span class='o'>(</span>Freq <span class='o'>=</span> <span class='nv'>count</span><span class='o'>/</span><span class='nf'><a href='https://rdrr.io/r/base/sum.html'>sum</a></span><span class='o'>(</span><span class='nv'>count</span><span class='o'>)</span><span class='o'>)</span>
 
 <span class='c'># check vote choice is the same across sample and population </span>
-<span class='nf'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='o'>(</span><span class='nf'>svymean</span><span class='o'>(</span><span class='o'>~</span><span class='nv'>vote</span>, <span class='nv'>s_rake</span><span class='o'>)</span>,<span class='nv'>freq_vote_pop</span><span class='o'>$</span><span class='nv'>Freq</span><span class='o'>)</span>
-              [,1]        [,2]
-vote1  0.073768544 0.073768544
-vote2  0.133058977 0.133058977
-vote3  0.070929804 0.070929804
-vote4  0.055711338 0.055711338
-vote5  0.099192687 0.099192687
-vote6  0.050667329 0.050667329
-vote7  0.071577109 0.071577109
-vote12 0.078556055 0.078556055
-vote13 0.062786884 0.062786884
-vote14 0.030713753 0.030713753
-vote15 0.050987615 0.050987615
-vote17 0.018413242 0.018413242
-vote18 0.009194255 0.009194255
-vote50 0.053637440 0.053637440
-vote52 0.116198557 0.116198557
-vote97 0.024606410 0.024606410
+<span class='nf'>kable</span><span class='o'>(</span><span class='nf'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='o'>(</span><span class='nf'>svymean</span><span class='o'>(</span><span class='o'>~</span><span class='nv'>vote</span>, <span class='nv'>s_rake</span><span class='o'>)</span>,<span class='nv'>freq_vote_pop</span><span class='o'>$</span><span class='nv'>Freq</span><span class='o'>)</span><span class='o'>)</span>
+</code></pre>
 
+|        |           |           |
+|:-------|----------:|----------:|
+| vote1  | 0.0737685 | 0.0737685 |
+| vote2  | 0.1330590 | 0.1330590 |
+| vote3  | 0.0709298 | 0.0709298 |
+| vote4  | 0.0557113 | 0.0557113 |
+| vote5  | 0.0991927 | 0.0991927 |
+| vote6  | 0.0506673 | 0.0506673 |
+| vote7  | 0.0715771 | 0.0715771 |
+| vote12 | 0.0785561 | 0.0785561 |
+| vote13 | 0.0627869 | 0.0627869 |
+| vote14 | 0.0307138 | 0.0307138 |
+| vote15 | 0.0509876 | 0.0509876 |
+| vote17 | 0.0184132 | 0.0184132 |
+| vote18 | 0.0091943 | 0.0091943 |
+| vote50 | 0.0536374 | 0.0536374 |
+| vote52 | 0.1161986 | 0.1161986 |
+| vote97 | 0.0246064 | 0.0246064 |
+
+<pre class='chroma'><code class='language-r' data-lang='r'>
 <span class='c'>## Merging with BNES data set ##</span>
 <span class='nv'>binded</span> <span class='o'>&lt;-</span> <span class='nf'><a href='https://rdrr.io/r/base/cbind.html'>cbind</a></span><span class='o'>(</span><span class='nv'>data_wo_na_f</span>,<span class='nf'><a href='https://rdrr.io/r/stats/weights.html'>weights</a></span><span class='o'>(</span><span class='nv'>trimmed_w</span><span class='o'>)</span><span class='o'>)</span>
 <span class='nf'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='o'>(</span><span class='nv'>binded</span><span class='o'>)</span><span class='o'>[</span><span class='nf'><a href='https://rdrr.io/r/base/grep.html'>grep</a></span><span class='o'>(</span><span class='s'>"weights"</span>,<span class='nf'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='o'>(</span><span class='nv'>binded</span><span class='o'>)</span><span class='o'>)</span><span class='o'>]</span> <span class='o'>&lt;-</span> <span class='s'>"w_agev_bel"</span>
@@ -607,15 +597,15 @@ attached base packages:
 [1] grid      stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
- [1] patchwork_1.1.1      gtsummary_1.3.6.9015 gt_0.2.2             survey_4.0           survival_3.2-7       Matrix_1.2-18        forcats_0.5.1        stringr_1.4.0        dplyr_1.0.4          purrr_0.3.4          readr_1.4.0          tidyr_1.1.2          tibble_3.0.6         ggplot2_3.3.3       
-[15] tidyverse_1.3.0     
+ [1] knitr_1.31           patchwork_1.1.1      gtsummary_1.3.6.9015 gt_0.2.2             survey_4.0           survival_3.2-7       Matrix_1.2-18        forcats_0.5.1        stringr_1.4.0        dplyr_1.0.4          purrr_0.3.4          readr_1.4.0          tidyr_1.1.2          tibble_3.0.6        
+[15] ggplot2_3.3.3        tidyverse_1.3.0     
 
 loaded via a namespace (and not attached):
  [1] httr_1.4.2          jsonlite_1.7.2      splines_4.0.3       modelr_0.1.8        assertthat_0.2.1    highr_0.8           cellranger_1.1.0    yaml_2.2.1          gdtools_0.2.3       pillar_1.4.7        backports_1.2.1     lattice_0.20-41     glue_1.4.2          uuid_0.1-4         
 [15] digest_0.6.27       rvest_0.3.6         colorspace_2.0-0    htmltools_0.5.1.1   pkgconfig_2.0.3     broom_0.7.5         haven_2.3.1         scales_1.1.1        webshot_0.5.2       processx_3.4.5      officer_0.3.16      downlit_0.2.1       generics_0.1.0      farver_2.0.3       
 [29] ellipsis_0.3.1      withr_2.4.1         cli_2.3.0           magrittr_2.0.1      crayon_1.4.1        readxl_1.3.1        evaluate_0.14       ps_1.5.0            fs_1.5.0            fansi_0.4.2         broom.helpers_1.2.0 xml2_1.3.2          tools_4.0.3         data.table_1.13.6  
 [43] hms_1.0.0           mitools_2.4         lifecycle_1.0.0     flextable_0.6.3     munsell_0.5.0       reprex_0.3.0        zip_2.1.1           callr_3.5.1         compiler_4.0.3      systemfonts_0.3.2   rlang_0.4.10        rstudioapi_0.13     base64enc_0.1-3     labeling_0.4.2     
-[57] rmarkdown_2.7       gtable_0.3.0        DBI_1.1.1           R6_2.5.0            lubridate_1.7.9.2   knitr_1.31          utf8_1.1.4          stringi_1.5.3       hugodown_0.0.0.9000 Rcpp_1.0.6          vctrs_0.3.6         dbplyr_2.0.0        tidyselect_1.1.0    xfun_0.21          </code></pre>
+[57] rmarkdown_2.7       gtable_0.3.0        DBI_1.1.1           R6_2.5.0            lubridate_1.7.9.2   stringi_1.5.3       hugodown_0.0.0.9000 Rcpp_1.0.6          vctrs_0.3.6         dbplyr_2.0.0        tidyselect_1.1.0    xfun_0.21          </code></pre>
 
 </div>
 
