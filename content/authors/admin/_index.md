@@ -69,11 +69,11 @@ email: ""
 highlight_name: false
 ---
 
-I am a quantitative social scientist, statistician, and R fanatic. I am currently an FWO PhD Fellow at the [Institute for Social and Political Opinion Research (ISPO)](https://soc.kuleuven.be/ceso/ispo), KU Leuven, Belgium. I finished my MA at the [ Central European University](https://www.ceu.edu). I have too many hobbies but what never gets me tried is cooking, woodworking, and reading about how individuals make choices. Huge Linux fan boy. 
+I am a quantitative social scientist, statistician, and R enthusiast. I am currently an FWO PhD Fellow at the [Institute for Social and Political Opinion Research (ISPO)](https://soc.kuleuven.be/ceso/ispo), KU Leuven, Belgium. I finished my MA at the [ Central European University](https://www.ceu.edu), Budapest. I have too many hobbies but what never gets me tried is cooking, crafting, and reading about how individuals make choices. Huge Linux fan boy. 
 
 # Resarch
 
-My research interests are mostly within the field of public opinion, statistics, voting behaviour, and attitudes towards democracy. More precisely, my Ph.D. is on radical belief systems, conditionality of liberal values, and political polarisation. I am currently working on the questionnaire design, data collection, and exploratory data analysis for the [Belgian National Electoral Study](https://soc.kuleuven.be/ceso/ispo/projects/copy_of_the-transformation-of-the-socio-economic-left-2013-right-cleavage). 
+My research interests are mostly within the field of public opinion, statistics, voting behaviour, and attitudes towards democracy. My Ph.D. is on radical belief systems, conditionality of liberal values, and political polarisation. I am currently working on the questionnaire design, data collection and analysis of the [Belgian National Electoral Study](https://soc.kuleuven.be/ceso/ispo/projects/copy_of_the-transformation-of-the-socio-economic-left-2013-right-cleavage). 
 
 Methods wise, I am particularly interested in conjoint analysis, matching and standardization techniques, graphical causal models, machine learning, and big data. 
 
@@ -81,6 +81,6 @@ I am a member of the survey and experimental teams of [Team Populism](http://www
 
 # Private Sector
 
-Concerning the private sector, I am an external consultant and analyst for [ZK Analytics](http://www.zkanalytics.com/) and for the [European Consortium for Political Research (Methods Schools)](https://ecpr.eu/Events/EventTypeDetails.aspx?EventTypeID=5). 
+I am an external consultant and analyst for [ZK Analytics](http://www.zkanalytics.com/) and for the [European Consortium for Political Research (Methods Schools)](https://ecpr.eu/Events/EventTypeDetails.aspx?EventTypeID=5). 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/stefanelli_CV_academic.pdf" "newtab" >}}resumé{{< /staticref >}}.

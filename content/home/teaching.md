@@ -29,7 +29,7 @@ weight = 60
 
 + Advance Multilevel Modelling (Levente (Levi) Littvay, ECPR, 2020)
 
-+ Logistic Regression and Generalised Linear Models (Michał Kotnarowski, 2019, ECPR)
++ Logistic Regression and GLM (Michał Kotnarowski, 2019, ECPR)
 
 + Automated Collection of Web and Social Data (Theresa Gessler (2019) and Pablo Barbera (2018), ECPR)
 
