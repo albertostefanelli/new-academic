@@ -18,34 +18,9 @@ output:
   #   fig_width: 12
   #   fig_height: 8
 # header-includes
-rmd_hash: 141a40b95b494494
+rmd_hash: 126ef12e48446bee
 
 ---
-
-<style type="text/css">
-#content {
-    max-width: 1500px !important;
-/*    !margin-left: 300px !important;
-*/
-}
-#table-of-contents {
-    width: 300px !important;
-}
-
-#postamble {
-  font-size: 10px;
-}
-
-pre{
-  background-color: #FFFFFF;
-    font-size: 12px;
-}
-pre:not([class]) {
-  background-color: #D8D8D8;
-    color: black;
-}
-
-</style>
 
 This short post describes the procedure used to calculate the post-stratification weights included in the 2019 Belgian National Electoral Study (BNES) data. Organized by [ISPO](https://soc.kuleuven.be/ceso/ispo), the BNES is a post-election study of the Belgium federal elections. The election study combines traditional politically orientated questions (e.g. voting behaviour, left-right orientations), socio-demographic variables (e.g. occupation, ethnicity, gender) and attitudinal dispositions (e.g. democratic values, anti-immigrant stands). The weights available in the dataset have been computed using the statistical suite R ([R Core Team 2019](#ref-r_core_team_r:_2019)) and the survey package version 4.0 ([Lumley 2020](#ref-lumley_SurveyAnalysisComplex_2020)).
 
@@ -272,9 +247,10 @@ In certain scenarios, the computed weights might be too large. This happens when
   caption <span class='o'>=</span> <span class='s'>'Raw and trimmed (&gt;4) AGE weights'</span><span class='o'>)</span>
 
 </code></pre>
-<img src="figs/unnamed-chunk-7-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="unnamed-chunk-7-1.png" width="700px" style="display: block; margin: auto;" />
 
 </div>
+
 
 Finally, we merge the weights with the untouched dataset. We use the respondent id (addressID) to merge the two datasets together. This automatically set the weights to NA for those respondents with missing on the matching variables.
 
