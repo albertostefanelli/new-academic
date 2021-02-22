@@ -1,5 +1,5 @@
 ---
-title: Scientific writing made easy 101 - Sublime and R-IDE
+title: Scientific writing made easy - Sublime and R-IDE
 subtitle: Set up a beautifully simple multi purpose working suite in under 10 minutes.
 
 # Summary for listings and search engines
