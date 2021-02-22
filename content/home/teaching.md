@@ -23,7 +23,7 @@ weight = 60
 
 **I have served as Teaching Assistant for the following courses:**
 
-+ Multi-level Structural Equation Modelling (Bruno Castanho Silva,  ECPR, 2021)
++ Multilevel Structural Equation Modelling (Bruno Castanho Silva,  ECPR, 2021)
 
 + Structural Equation Modelling (Bart Meuleman, ECPR, 2021)
 
