@@ -60,7 +60,7 @@ social:
 # and uncomment the lines below.
 - icon: cv
   icon_pack: ai
-  link: stefanelli_CV_academic.pdf
+  link: media/stefanelli_CV_academic.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
