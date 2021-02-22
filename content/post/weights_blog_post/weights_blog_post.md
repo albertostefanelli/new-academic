@@ -18,7 +18,7 @@ output:
   #   fig_width: 12
   #   fig_height: 8
 # header-includes
-rmd_hash: 126ef12e48446bee
+rmd_hash: e2bdb99c56d47cca
 
 ---
 
@@ -311,11 +311,11 @@ In addition to the LFS data, we gather the official 2019 electoral results and d
 <span class='c'># PTB and PVDA are counted separately in the federal results but it is a single party</span>
 <span class='c'># 99=NAs </span>
 
-<span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>vote</span> <span class='o'>&lt;-</span> <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>8</span>, <span class='m'>97</span>,                                    <span class='c'># francophone party</span>
-                        <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>9</span><span class='o'>|</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span><span class='o'>==</span><span class='m'>19</span>, <span class='m'>97</span>,            <span class='c'># other party </span>
-                          <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>16</span>, <span class='m'>7</span>,                                <span class='c'># merge PTB and PVDA </span>
-                            <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>77</span> <span class='o'>|</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span><span class='m'>99</span>, <span class='kc'>NA</span>,    <span class='c'># 77 DK 99 No response</span>
-                              <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>50</span> <span class='o'>|</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>51</span>, <span class='m'>50</span>, <span class='c'># merge blank and null votes </span>
+<span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>vote</span> <span class='o'>&lt;-</span> <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>8</span>, <span class='m'>97</span>,                                    <span class='c'># francophone p</span>
+                        <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>9</span> <span class='o'>|</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span><span class='o'>==</span><span class='m'>19</span>, <span class='m'>97</span>,          <span class='c'># other p</span>
+                          <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>16</span>, <span class='m'>7</span>,                                <span class='c'># merge PTB PVDA </span>
+                            <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>77</span> <span class='o'>|</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span><span class='m'>99</span>, <span class='kc'>NA</span>,    <span class='c'># 77 DK 99 No resp</span>
+                              <span class='nf'><a href='https://rdrr.io/r/base/ifelse.html'>ifelse</a></span><span class='o'>(</span><span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>50</span> <span class='o'>|</span> <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span> <span class='o'>==</span> <span class='m'>51</span>, <span class='m'>50</span>, <span class='c'># merge blank and null </span>
                                  <span class='nv'>BNES_selected</span><span class='o'>$</span><span class='nv'>q24</span>
                         <span class='o'>)</span><span class='o'>)</span><span class='o'>)</span><span class='o'>)</span><span class='o'>)</span>
 
@@ -481,7 +481,7 @@ Finally, we are going to use the `rake()` function to iteratively match the popu
                     <span class='nf'>theme_classic</span><span class='o'>(</span><span class='o'>)</span>
 
 <span class='o'>(</span><span class='nv'>plot_non_trimmed_v</span> <span class='o'>+</span> <span class='nv'>plot_trimmed_v</span><span class='o'>)</span> <span class='o'>+</span> <span class='nf'>plot_annotation</span><span class='o'>(</span>
-  title <span class='o'>=</span> <span class='s'>'Demographic weights'</span>,
+  title <span class='o'>=</span> <span class='s'>'Voting weights'</span>,
   caption <span class='o'>=</span> <span class='s'>'Raw and trimmed (&gt;4) AGE weights'</span><span class='o'>)</span>
 
 </code></pre>
