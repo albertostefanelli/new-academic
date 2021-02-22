@@ -2,6 +2,12 @@
 date = 2018-09-26
 title = "Scientific writing made easy 101: Sublime and R-IDE"
 
+image:
+  caption: ''
+  focal_point: ""
+  placement: 2
+  preview_only: false
+  
 tags = []
 summary = "Set up a beautifully simple multi purpose working suite in under 10 minutes."
 +++
