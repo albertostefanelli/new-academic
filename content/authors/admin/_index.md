@@ -72,6 +72,8 @@ highlight_name: false
 
 I am a FWO PhD Fellow at the [Institute for Social and Political Opinion Research (ISPO)](https://soc.kuleuven.be/ceso/ispo), KU Leuven, Belgium. My research interests are mostly within the field of public opinion, statistics, voting behaviour, and attitudes towards democracy. 
 
+## Resarch
+
 More precisely, my PhD is on radical belief systems, conditionality of liberal values, and polarisation. I am currently working on the questionnaire design, data collection, and exploratory data analysis for the Belgian National Electoral Study (BNES) and the Belgian Ethnic Minorities Election Study (BEMES).
 
 Methods wise, I am particularly interested in conjoint analysis, matching and standardization techniques, graphical causal models, machine learning, and big data. 
