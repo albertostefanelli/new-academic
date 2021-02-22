@@ -1,17 +1,18 @@
 // Narrower container for Hello World sections (primarily Blank widget content).
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
+  .home-section .container {
+    max-width: 1100px;
+  }
+}
+
+@media (min-width: 992px){
   .home-section .container {
     max-width: 1200px;
   }
 }
-@media (min-width: 992px){
-  .home-section .container {
-    max-width: 1500px;
-  }
-}
 
 .article-container {
-  max-width: 2000px;
+  max-width: 1200px;
   padding: 0 20px 0 20px;
   margin: 0 auto 0 auto;
   font-size: 20px;
