@@ -247,10 +247,9 @@ In certain scenarios, the computed weights might be too large. This happens when
   caption <span class='o'>=</span> <span class='s'>'Raw and trimmed (&gt;4) AGE weights'</span><span class='o'>)</span>
 
 </code></pre>
-<img src="unnamed-chunk-7-1.png" width="700px" style="display: block; margin: auto;" />
+<img src="figs/unnamed-chunk-7-1.png" width="700px" style="display: block; margin: auto;" />
 
 </div>
-
 
 Finally, we merge the weights with the untouched dataset. We use the respondent id (addressID) to merge the two datasets together. This automatically set the weights to NA for those respondents with missing on the matching variables.
 
