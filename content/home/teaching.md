@@ -17,28 +17,28 @@ weight = 60
 
 **Instructor for the following courses:**
 
-+ Introduction to Conjoint Experiments (ECPR Winter School, 2020)
++ Introduction to Conjoint Experiments (ECPR, 2020)
 
-+ Propensity Matching and Standardisation techniques (Hebrew University of Jerusalem, Jerusalem, Israel, 2019)
++ Propensity Matching and Standardisation techniques (Hebrew University of Jerusalem, Israel, 2019)
 
 **I have served as Teaching Assistant for the following courses:**
 
-+ Multilevel Structural Equation Modelling (Bruno Castanho Silva,  ECPR, 2021)
++ Multilevel Structural Equation Modelling (Bruno Castanho Silva, ECPR, 2021)
 
 + Structural Equation Modelling (Bart Meuleman, ECPR, 2021)
 
-+ Advance Multilevel Modelling (Levente (Levi) Littvay, ECPR, 2020)
++ Advance Multilevel Modelling (Levi Littvay, ECPR, 2020)
 
 + Logistic Regression and GLM (Michał Kotnarowski, 2019, ECPR)
 
-+ Automated Collection of Web and Social Data (Theresa Gessler (2019) and Pablo Barbera (2018), ECPR)
++ Automated Collection of Web and Social Data (Theresa Gessler and Pablo Barbera, ECPR, 2018-2019)
 
 + R Basics (Akos Mate, ECPR, 2018)
 
 + Text Mining Boot Camp (ITI Project, Central European University, 2018)
 
-+ Regression Refresher (Levente (Levi) Littvay, ECPR, 2018)
++ Regression Refresher (Levi Littvay, ECPR, 2018)
 
-+ Experimental Political Science (Levente (Levi) Littvay, Central European University, 2018)
++ Experimental Political Science (Levi Littvay, Central European University, 2018)
 
 + Text Analysis Across Discipline (ITI Project, Central European University, 2017)
