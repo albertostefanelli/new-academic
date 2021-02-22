@@ -14,7 +14,7 @@ organizations:
   url: https://soc.kuleuven.be/ceso/ispo
 
 # Short bio (displayed in user profile at end of posts)
-bio: Public opinion, voting behaviour, attitudes towards democracy, simulations, and R stats. 
+bio: Public opinion, voting behaviour, attitudes towards democracy, simulations, and R stats. But mostly noise. 
 
 # Interests to show in About widget
 interests:
