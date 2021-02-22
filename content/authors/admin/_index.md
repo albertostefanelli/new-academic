@@ -1,39 +1,45 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Alberto Stefanelli
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: PhD Candidate, Data Scientist, Consultant
 
 # Organizations/Affiliations to show in About widget
 organizations:
-- name: Stanford University
-  url: https://www.stanford.edu/
+- name: KU Leuven, Institute for Social and Political Opinion Research (ISPO)
+  url: https://soc.kuleuven.be/ceso/ispo
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests are mostly within the field of public opinion, voting behaviour, and attitudes towards democracy.
 
 # Interests to show in About widget
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Voting behaviour
+- Public opinion
+- Populism
+- Radicalism
+- Democratic representation
+- Experimental designs
 
 # Education to show in About widget
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: FWO PhD Fellow
+    institution: KU Leuven, Leuven, Belgium
+    year: 
+  - course: MSc in Statistics
+    institution: KU Leuven, Leuven, Belgium
+    year: 
+  - course: MA in Political Science
+    institution: Central European University, Budapest, Hungary
+    year: 2018
+  - course: BA in Political Science, International Relations, Public Administration
+    institution: University of Padua, Padua, Italy
+    year: 2015
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -45,16 +51,10 @@ social:
   link: '/#contact'
 - icon: twitter
   icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: graduation-cap  # Alternatively, use `google-scholar` icon from `ai` icon pack
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://twitter.com/sergsagara
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
-- icon: linkedin
-  icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://github.com/albertostefanelli
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
@@ -70,8 +70,15 @@ email: ""
 highlight_name: false
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am a FWO PhD Fellow at the [Institute for Social and Political Opinion Research (ISPO)](https://soc.kuleuven.be/ceso/ispo), KU Leuven, Belgium. My research interests are mostly within the field of public opinion, voting behaviour, and attitudes towards democracy. My PhD is on radical belief systems, conditionality of liberal values, and polarisation. I am currently working on the questionnaire design and data collection for the Belgian National Electoral Study (BNES) and the Belgian Ethnic Minorities Election Study (BEMES).
+
+Methods wise, I am particularly interested in conjoint analysis, matching and standardization techniques, graphical causal models, machine learning, and big data. 
+
+I am a member of the survey and experimental teams of [Team Populism](http://www.teampopulism.com/), a research group that brings together renowned scholars from Europe and the Americas to study the causes and consequences of populism.
+
+Concerning the private sector, I am an external consultant and analyst for [ZK Analytics](http://www.zkanalytics.com/) and for the [European Consortium for Political Research (Methods Schools)](https://ecpr.eu/Events/EventTypeDetails.aspx?EventTypeID=5). 
+
+I have too many hobbies but what never gets me tried is cooking, woodworking, and reading about how individuals make choices. Huge Linux fan boy. 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
