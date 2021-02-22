@@ -3,7 +3,7 @@ title: Scientific writing made easy 101: Sublime and R-IDE
 subtitle: Set up a beautifully simple multi purpose working suite in under 10 minutes.
 
 # Summary for listings and search engines
-summary:Set up a beautifully simple multi purpose working suite in under 10 minutes.
+summary: Set up a beautifully simple multi purpose working suite in under 10 minutes.
 
 # Link this post with a project
 projects: []
