@@ -36,7 +36,7 @@ tags:
 categories:
 ---
 
-UPDATE 22/02/2021: *CAUTION:* This guide is a bit out-dated. For instance, R-IDE changed name into [sublime-ide-r](https://github.com/REditorSupport/sublime-ide-r). Overall, the guide remains valid. However, if you follow it, be aware that you will have to adapt some of the steps. 
+**UPDATE 22/02/2021:** *CAUTION:* This guide is a bit out-dated. For instance, R-IDE changed name into [sublime-ide-r](https://github.com/REditorSupport/sublime-ide-r). Overall, the guide remains valid. However, if you follow it, be aware that you will have to adapt some of the steps. 
 
 
 A couple of months ago, I was looking for an alternative to LaTex to easily write multi format articles and technical reports in a nicely formatted way. The natural choice would be the excellent R-Studio suite with RMarkdown and its new Radix framework. Although R-Studio is a good choice for small reports, it lacks most of the features of a modern writing suite, making the act of writing extremely annoying. I ran into Sublime thanks to this [nice blog post](https://akosm.netlify.com/post/using-r-markdown-to-write-papers-that-look-seriously-nice/) by Akos Mate and I decided to give it a try. After more than two months of intensive use, I can undoubtedly say that Sublime is the clear winner among all its competitors (Latex, R-Studio, Atom, Vim).  
