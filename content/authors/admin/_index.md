@@ -14,7 +14,7 @@ organizations:
   url: https://soc.kuleuven.be/ceso/ispo
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests are mostly within the field of public opinion, voting behaviour, and attitudes towards democracy.
+bio: Public opinion, voting behaviour, attitudes towards democracy, simulations, and R stats. 
 
 # Interests to show in About widget
 interests:
