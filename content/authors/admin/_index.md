@@ -69,11 +69,11 @@ email: ""
 highlight_name: false
 ---
 
-I am a quantitative social scientist, statistician, and R fanatic. I am currently an FWO PhD Fellow at the [Institute for Social and Political Opinion Research (ISPO)](https://soc.kuleuven.be/ceso/ispo), KU Leuven, Belgium. I finished my MA at the Central European University, Hungary. I have too many hobbies but what never gets me tried is cooking, woodworking, and reading about how individuals make choices. Huge Linux fan boy. 
+I am a quantitative social scientist, statistician, and R fanatic. I am currently an FWO PhD Fellow at the [Institute for Social and Political Opinion Research (ISPO)](https://soc.kuleuven.be/ceso/ispo), KU Leuven, Belgium. I finished my MA at the [ Central European University](https://www.ceu.edu). I have too many hobbies but what never gets me tried is cooking, woodworking, and reading about how individuals make choices. Huge Linux fan boy. 
 
 # Resarch
 
-My research interests are mostly within the field of public opinion, statistics, voting behaviour, and attitudes towards democracy.  More precisely, my Ph.D. is on radical belief systems, conditionality of liberal values, and political polarisation. I am currently working on the questionnaire design, data collection, and exploratory data analysis for the Belgian National Electoral Study (BNES) and the Belgian Ethnic Minorities Election Study (BEMES).
+My research interests are mostly within the field of public opinion, statistics, voting behaviour, and attitudes towards democracy. More precisely, my Ph.D. is on radical belief systems, conditionality of liberal values, and political polarisation. I am currently working on the questionnaire design, data collection, and exploratory data analysis for the [Belgian National Electoral Study](https://soc.kuleuven.be/ceso/ispo/projects/copy_of_the-transformation-of-the-socio-economic-left-2013-right-cleavage). 
 
 Methods wise, I am particularly interested in conjoint analysis, matching and standardization techniques, graphical causal models, machine learning, and big data. 
 
