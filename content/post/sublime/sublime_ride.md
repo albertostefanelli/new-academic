@@ -9,10 +9,10 @@ summary: Set up a beautifully simple multi purpose working suite in under 10 min
 projects: []
 
 # Date published
-date: "2020-12-13T00:00:00Z"
+date: "2018-09-26"
 
 # Date updated
-lastmod: "2020-12-13T00:00:00Z"
+lastmod: "2018-09-26"
 
 # Is this an unpublished draft?
 draft: false
@@ -30,15 +30,10 @@ image:
 
 authors:
 - admin
-- 吳恩達
 
 tags:
-- Academic
-- 开源
 
 categories:
-- Demo
-- 教程
 ---
 
 UPDATE 22/02/2021: *CAUTION:* This guide is a bit out-dated. For instance, R-IDE changed name into [sublime-ide-r](https://github.com/REditorSupport/sublime-ide-r). Overall, the guide remains valid. However, if you follow it, be aware that you will have to adapt some of the steps. 
