@@ -77,7 +77,7 @@ My research interests are mostly within the field of public opinion, statistics,
 
 Methods wise, I am particularly interested in conjoint analysis, matching and standardization techniques, graphical causal models, machine learning, and big data. 
 
-I am a member of the survey and experimental teams of [Team Populism](http://www.teampopulism.com/), a research group that brings together renowned scholars from Europe and the Americas to study the causes and consequences of populism.
+I am a member of the survey and experimental teams of [Team Populism](http://www.teampopulism.com/), a research group that brings together renowned scholars from Europe and the Americas to study the causes and consequences of populism. Together with Luca and Amandine, I run the [MethLab](https://soc.kuleuven.be/fsw/doctoralprogramme/meth-lab), an initiative to discuss and learn cool research methods. 
 
 # Private Sector
 
