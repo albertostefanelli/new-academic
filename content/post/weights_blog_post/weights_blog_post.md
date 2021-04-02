@@ -1,7 +1,7 @@
 ---
 title: Weighting the BNES 2019 data
 author: Alberto Stefanelli^[[Alberto  Stefanelli](https://albertostefanelli.com/)]
-# date: "2021-03-15"
+# date: "2021-04-02"
 # fontsize: 10pt 
 bibliography: /Users/serg/Library/Mobile Documents/com\~apple\~CloudDocs/academia/library.bib
 link-citations: yes
@@ -18,7 +18,7 @@ output:
   #   fig_width: 12
   #   fig_height: 8
 # header-includes
-rmd_hash: 141b2d392c6ed9a9
+rmd_hash: 6de5afc5e97ae771
 
 ---
 
@@ -30,7 +30,7 @@ The 2019 BNES is designed to comprise a representative sample of the Belgian ele
 
 To mitigate the potential mismatch between the BNES sample and the target population, we computed post-stratification weights. These weights are employed to give more or less importance ("weight") to those individuals that have been more or less difficult to reach or interview than others. For instance, if the Belgian electorate consists of 50% females and 50% males, but the sample consists of 40% females and 60% males, we can use a weight that makes the male observations in our sample count less and the female observations count more.
 
-Different methods can be used to generate weights (for an overview see, [Pew Research 2018](#ref-pewresearch_HowDifferentWeighting_2018)). The method generally used at ISPO is a population-based method, in which information on population subclasses is used to calculate weighting coefficients. The main reason to employ such type of post-stratification weights is that our variables of interest (e.g. anti-immigration attitudes) are likely to vary as a function of a set of individual-level characteristics such as education, age, or the different geographical areas in the country.
+Different methods can be used to generate weights (for an overview see, [Pew Research 2018](#ref-pewresearch_HowDifferentWeighting_2018)). In the social sciences (and at at ISPO), researchers tend to almost exclusively use population-based methods, in which information on population subclasses is used to calculate weighting coefficients. The most commonly used methods are post stratification and raking. The main reason to employ such type of post-stratification weights is that our variables of interest (e.g. anti-immigration attitudes) are likely to vary as a function of a set of individual-level characteristics such as education, age, or the different geographical areas in the country.
 
 Post-stratification weights should be ideally calculated using census data. However, Belgium conducted the last census in 2011. Using such data to compute the weights is not appropriate since we would match our sample to the 2011 Belgian population. As commonly done, we use population data from the European Union Labour Force Survey (LFS). The LFS data have been provided by Ellen Quintelier (thanks!) of Statbel, the "Direction Générale Statistique" of Belgium.
 
@@ -48,6 +48,8 @@ The BNES data include six variables for weighting:
 In this post, I focus on the calculation of w_age_bel and w_agev_bel. The calculations for the Wallonia and Flanders samples are just a matter of subsetting the data according to the corresponding regions.
 
 # Demographics weights
+
+The most commonly used method to calculate demographics weights is post stratification Yet, the term "post-stratification" is often misused and incorrectly employed to describe any type of population-based method. Post-stratification has two requirements. First, it uses data obtained in the survey itself that were not available before sampling. So if the sample have been stratified on gender, this should not be used to construct post-stratification weights unless there has been some problems in the data collection process. Second, and perhaps most importantly, post-stratification requires the joint distribution of the population grouping variables. When a survey says that the sample is post-stratified on vote choice, race, age, gender, education and income, technically, it means that a six-way contingency table of population counts has been used to adjusted the weights in each cell.
 
 The first step to calculate post-stratification weights is to pre-process the BNES and the LFS data set. Specifically, we need to manipulate our survey data so that the R survey package can automatically match the BNES age, sex, education, region contingency table with the population frequencies from the LFS data set.
 
@@ -290,7 +292,7 @@ Similarly to the tendency of some individual to be less likely to participate in
 
 The procedure to calculate voting behaviour weights is a bit more complicated compared to the previous one. For the demographic weights, we used the joint distribution of the demographic variables. This means that we have the LFS estimated number of males living in Wallonia, aged between 18-28, with a high level of education. For voting behaviour, we do not have a complete cross-classification for the grouping variables. We only know the marginal distribution, that is, the total number of people who voted for a certain party, who cast a blanc or null vote, and who did not vote. In other words, we do not know the number of males living in Wallonia, aged between 18-28, with a high level of education who voted for the Socialist Party or cast a null vote. As such, we need to use a technique called raking.
 
-Given two different contingency tables, raking searches for the values to assign to the cells of the first table such that its marginal counts (the row and column "totals") are the same as in the second table. For example, we know from the population data that our sample should be 48% male and 52% female with 80% of turnout during the election day. The raking procedure will first adjust the weights so that the gender ratio in the survey matches the desired population distribution. Next, the weights are adjusted so that the voters and non-voters marginal distribution in the survey matches the population figures. If the adjustment for voting makes the sex distribution out of alignment, the weights are adjusted till all of the post-stratification variables match their specified targets. That's why this procedure is called raking. The name refers to the process of "raking" a garden bed alternately in each direction to smooth out the soil.
+Raking belongs to the so called linear calibration techniques in which the weights are a linear combination of the variables used to construct the weights that minimise the discrepancy between the survey total and the known population total for a given variable. Given two different contingency tables, raking searches for the values to assign to the cells of the first table such that its marginal counts (the row and column "totals") are the same as in the second table. For example, we know from the population data that our sample should be 48% male and 52% female with 80% of turnout during the election day. The raking procedure will first adjust the weights so that the gender ratio in the survey matches the desired population distribution. Next, the weights are adjusted so that the voters and non-voters marginal distribution in the survey matches the population figures. If the adjustment for voting makes the sex distribution out of alignment, the weights are adjusted till all of the post-stratification variables match their specified targets. That's why this procedure is called raking. The name refers to the process of "raking" a garden bed alternately in each direction to smooth out the soil.
 
 In addition to the LFS data, we gather the official 2019 electoral results and derived the vote share of each political parties at Election Day, the share of null and blank votes, and the share of non-voters. We acquired the 2019 electoral results from the website of the [Federal Public Services Home Affairs](https://elections2019.belgium.be/en). The vote share at the Election Day of the following political parties have been included in the weights calculations: CDV, NVA, Open VLD, s.pa, VB, Groen only for Flanders; PVDA/PTB for both Flanders and Wallonia; PS, MR, CDH, Ecolo, DEFI, PP only for Wallonia. Any other party (i.e. francophone party voted in Flanders) have been excluded from the calculations since not present in the BNES data.
 
@@ -559,10 +561,10 @@ other attached packages:
 
 loaded via a namespace (and not attached):
  [1] httr_1.4.2          jsonlite_1.7.2      splines_4.0.4       modelr_0.1.8        assertthat_0.2.1    highr_0.8           cellranger_1.1.0    yaml_2.2.1          gdtools_0.2.3       pillar_1.5.1        backports_1.2.1     lattice_0.20-41     glue_1.4.2          uuid_0.1-4         
-[15] digest_0.6.27       rvest_0.3.6         colorspace_2.0-0    htmltools_0.5.1.1   pkgconfig_2.0.3     broom_0.7.5.9000    haven_2.3.1         webshot_0.5.2       scales_1.1.1        processx_3.4.5      officer_0.3.17      downlit_0.2.1       generics_0.1.0      farver_2.0.3       
+[15] digest_0.6.27       rvest_0.3.6         colorspace_2.0-0    htmltools_0.5.1.1   pkgconfig_2.0.3     broom_0.7.5.9000    haven_2.3.1         webshot_0.5.2       scales_1.1.1        processx_3.4.5      officer_0.3.17      downlit_0.2.1       generics_0.1.0      farver_2.1.0       
 [29] usethis_2.0.1       ellipsis_0.3.1      withr_2.4.1         cli_2.3.1           magrittr_2.0.1      crayon_1.4.1        readxl_1.3.1        evaluate_0.14       ps_1.6.0            fs_1.5.0            fansi_0.4.2         broom.helpers_1.2.1 xml2_1.3.2          tools_4.0.4        
 [43] data.table_1.14.0   hms_1.0.0           mitools_2.4         lifecycle_1.0.0     flextable_0.6.3     munsell_0.5.0       reprex_1.0.0        zip_2.1.1           callr_3.5.1         compiler_4.0.4      systemfonts_1.0.1   rlang_0.4.10        rstudioapi_0.13     base64enc_0.1-3    
-[57] labeling_0.4.2      rmarkdown_2.7       gtable_0.3.0        DBI_1.1.1           R6_2.5.0            lubridate_1.7.10    utf8_1.1.4          stringi_1.5.3       hugodown_0.0.0.9000 Rcpp_1.0.6          vctrs_0.3.6         dbplyr_2.1.0        tidyselect_1.1.0    xfun_0.22          </code></pre>
+[57] labeling_0.4.2      rmarkdown_2.7       gtable_0.3.0        DBI_1.1.1           R6_2.5.0            lubridate_1.7.10    utf8_1.2.1          stringi_1.5.3       hugodown_0.0.0.9000 Rcpp_1.0.6          vctrs_0.3.6         dbplyr_2.1.0        tidyselect_1.1.0    xfun_0.22          </code></pre>
 
 </div>
 
